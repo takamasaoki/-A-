@@ -1,0 +1,68 @@
+-- データベースを使う
+use sample1;
+
+-- テーブルmembersの作成
+drop table if exists members;-- 一度削除する
+
+create table members (
+  id int primary key,-- idは整数で主キー
+  name varchar(50),  -- nameは文字列（最大50文字）
+  team_id int         -- 研究室のID（面倒になるから外部キーは設定しない）
+);
+
+-- データの追加
+insert into members (id, name, team_id) values (1, '岩瀬', 1);
+insert into members (id, name, team_id) values (2, '岩橋', 2);
+insert into members (id, name, team_id) values (3, '大木', 1);
+insert into members (id, name, team_id) values (4, '小山', 1);
+insert into members (id, name, team_id) values (5, 'Alice', 2);
+
+-- テーブルlaboratoriesの作成
+drop table if exists laboratories;-- 一度削除する
+
+create table labos (
+  name varchar(50),
+  id int primary key-- idは整数で主キー
+);
+
+-- データの追加
+insert into labos (name, id) values ('べガルダ仙台', 1);
+insert into labos (name, id) values ('鹿島アントラーズ', 2);
+insert into labos (name, id) values ('柏レイソル', 3);
+insert into labos (name, id) values ('浦和レッドダイヤモンズ', 2);
+insert into labos (name, id) values ('大宮アルディージャ', 1);
+insert into labos (name, id) values ('FC東京', 2);
+insert into labos (name, id) values ('川崎フロンターレ', 1);
+insert into labos (name, id) values ('横浜F・マリノス', 2);
+insert into labos (name, id) values ('湘南ベルマーレ', 1);
+insert into labos (name, id) values ('ヴァンフォーレ甲府', 2);
+insert into labos (name, id) values ('アルビレックス新潟', 1);
+insert into labos (name, id) values ('ジュビロ磐田', 2);
+insert into labos (name, id) values ('名古屋グランパス', 1);
+insert into labos (name, id) values ('ガンバ大阪', 2);
+insert into labos (name, id) values ('ヴィッセル神戸', 1);
+insert into labos (name, id) values ('サンフレッチェ広島', 2);
+insert into labos (name, id) values ('アビスパ福岡', 1);
+insert into labos (name, id) values ('サガン鳥栖', 2);
+insert into labos (name, id) values ('コンサドーレ札幌', 19);
+insert into labos (name, id) values ('モンテディオ山形', 20);
+insert into labos (name, id) values ('水戸ホーリーホック', 21);
+insert into labos (name, id) values ('ザスパクサツ群馬', 22);
+insert into labos (name, id) values ('ジェフユナイテッド千葉',23);
+insert into labos (name, id) values ('東京ヴェルディ', 24);
+insert into labos (name, id) values ('FC町田ゼルビア', 25);
+insert into labos (name, id) values ('横浜FC', 26);
+insert into labos (name, id) values ('松本山雅FC', 27);
+insert into labos (name, id) values ('ツエーゲン金沢', 28);
+insert into labos (name, id) values ('FC岐阜', 29);
+insert into labos (name, id) values ('清水エスパルス', 30);
+insert into labos (name, id) values ('京都サンガF.C.', 31);
+insert into labos (name, id) values ('セレッソ大阪', 32);
+insert into labos (name, id) values ('ファジアーノ岡山', 33);
+insert into labos (name, id) values ('レノファ山口', 34);
+insert into labos (name, id) values ('徳島ヴォルティス', 35);
+insert into labos (name, id) values ('カマタマーレ讃岐', 36);
+insert into labos (name, id) values ('愛媛FC', 37);
+insert into labos (name, id) values ('ギラヴァンツ北九州', 38);
+insert into labos (name, id) values ('V・ファーレン長崎', 39);
+insert into labos (name, id) values ('ロアッソ熊本', 40);
