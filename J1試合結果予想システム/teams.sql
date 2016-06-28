@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- テーブルの構造 `teams`
 --
 
-CREATE TABLE IF NOT EXISTS `teams` (
+CREATE TABLE IF NOT EXISTS `schedule` (
   `name` varchar(50) DEFAULT NULL,
   `team_id` int(11) NOT NULL,
   PRIMARY KEY (`team_id`)

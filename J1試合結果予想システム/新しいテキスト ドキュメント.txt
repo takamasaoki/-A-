@@ -1,0 +1,21 @@
+use cv45224_ag4;
+
+create table schedule (
+  schedule_id int primary key,
+  year int,
+  setsu int,
+  home int,
+  away int,
+  result varchar(50),
+  weather varchar(50),
+);
+
+CREATE TABLE `schedule` (
+`schedule_d` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`year` int ,
+`setsu` int ,
+`home` int ,
+`away` int ,
+`result` varchar( 50 ) NOT NULL ,
+`weather` varchar( 50 ) NULL
+) ENGINE = MYISAM
