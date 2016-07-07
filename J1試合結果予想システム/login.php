@@ -15,14 +15,14 @@ if ($_POST["password"] == "password") {
 $_SESSION["user_name"] = $_POST["user_name"];
 
 // 管理者専用画面へリダイレクト
-$login_url = "http://{$_SERVER["HTTP_HOST"]}/php_10days/anq_result.php";
+$login_url = "http://{$_SERVER["HTTP_HOST"]}/insert.php";
 header("Location: {$login_url}");
 exit;
 }
 $error_message = "パスワードが違います";
 }
 ?>
-
+<meta charset='utf-8' />
 <html>
 <head>
 <title>ログイン画面</title>
@@ -47,6 +47,7 @@ print '<font color="red">'.$error_message.'</font>';
 }
 ?>
 <br>
+
 <input type="submit" name="login" value="ログイン" />
 </form>
 </body>
